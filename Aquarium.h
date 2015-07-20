@@ -1,8 +1,20 @@
-// Only modify this file to include
-// - function definitions (prototypes)
-// - include files
-// - extern variable definitions
-// In the appropriate section
+/*
+    An Arduino PID PH Controller that uses Carbon Dioxide to modulate the PH of an Aquarium.
+    Copyright (C) 2013  NigelB, eResearch, James Cook Univerity
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #ifndef Aquarium_H_
 #define Aquarium_H_
@@ -14,10 +26,9 @@
 #include "PID.h"
 #include "HardwareSerial.h"
 #include "AtlasPH.h"
-//add your includes for the project Aquarium here
 
 
-//end of add your includes here
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -26,8 +37,6 @@ void setup();
 #ifdef __cplusplus
 } // extern "C"
 #endif
-
-//add your function definitions for the project Aquarium here
 
 struct UI {
 	void (*setpoint_up)();
@@ -88,5 +97,4 @@ int ph_pid_callback(char** argv, int argc);
 int pid_callback(char** argv, int argc, PID* pid);
 int ph_time_callback(char** argv, int argc);
 
-//Do not add code below this line
 #endif /* Aquarium_H_ */
