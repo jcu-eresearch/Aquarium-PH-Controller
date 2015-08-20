@@ -11,6 +11,3 @@ The following libraries are required:
 Download and unzip them in your Arduino libraries folder. If you are using [ino](http://inotool.org) to
 build this project then they can go into the lib folder. 
 
-	
-The following libraries are pulled in as git submodules:
-
